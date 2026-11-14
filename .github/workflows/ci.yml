@@ -47,11 +47,11 @@ jobs:
         run: |
           # The whole point of --fail-on is that CI can gate on it, so the two
           # directions are asserted here with real files, not just in unit tests.
-          printf 'ops ALL = /usr/bin/systemctl status app\n' > /tmp/clean.sudoers
-          printf 'ops ALL = /bin/bash\n' > /tmp/bad.sudoers
-          sshdguard scan /tmp/clean.sudoers --fail-on high
-          if sshdguard scan /tmp/bad.sudoers --fail-on high; then
-            echo "::error::bad.sudoers should exit 1 at --fail-on high"
+          printf 'Port 22\nAllowUsers deploy\nPermitRootLogin no\n' > /tmp/clean.conf
+          printf 'PermitRootLogin yes\nPasswordAuthentication yes\n' > /tmp/bad.conf
+          sshdguard scan /tmp/clean.conf --fail-on high
+          if sshdguard scan /tmp/bad.conf --fail-on high; then
+            echo "::error::bad.conf should exit 1 at --fail-on high"
             exit 1
           fi
           echo "gate contract ok (clean=0, bad=1)"
