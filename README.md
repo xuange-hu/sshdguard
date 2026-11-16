@@ -1,6 +1,7 @@
 # sshdguard
 
 [![CI](https://github.com/xuange-hu/sshdguard/actions/workflows/ci.yml/badge.svg)](https://github.com/xuange-hu/sshdguard/actions/workflows/ci.yml)
+[![tests-146%20passing](https://img.shields.io/badge/tests-146%20passing-brightgreen)](https://github.com/xuange-hu/sshdguard/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/badge/pypi-v0.1.0-blue)](https://pypi.org/project/sshdguard/)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![python](https://img.shields.io/badge/python-3.10%2B-blue)](pyproject.toml)
