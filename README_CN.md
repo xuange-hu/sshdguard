@@ -1,5 +1,10 @@
 # sshdguard
 
+[![tests](https://img.shields.io/badge/tests-146-brightgreen)](https://github.com/xuange-hu/sshdguard/actions)
+[![python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![deps](https://img.shields.io/badge/runtime%20dependencies-0-brightgreen)](https://github.com/xuange-hu/sshdguard/blob/main/pyproject.toml)
+
 [![CI](https://github.com/xuange-hu/sshdguard/actions/workflows/ci.yml/badge.svg)](https://github.com/xuange-hu/sshdguard/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/badge/pypi-v0.1.0-blue)](https://pypi.org/project/sshdguard/)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
